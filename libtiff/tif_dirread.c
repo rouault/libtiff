@@ -838,6 +838,7 @@ static enum TIFFReadDirEntryErr TIFFReadDirEntryArrayWithLimit(
 	uint32 datasize;
 	void* data;
         uint64 target_count64;
+        int original_datasize_clamped;
 	typesize=TIFFDataWidth(direntry->tdir_type);
         int original_datasize_clamped;
 
