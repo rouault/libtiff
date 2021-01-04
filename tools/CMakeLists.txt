@@ -89,13 +89,13 @@ target_link_libraries(tiffset tiff port)
 add_executable(tiffsplit tiffsplit.c)
 target_link_libraries(tiffsplit tiff port)
 
+# rgb2ycbcr and thumbnail are intended to *NOT* be installed. They are for
+# testing purposes only.
 install(TARGETS fax2ps
                 fax2tiff
                 pal2rgb
                 ppm2tiff
                 raw2tiff
-                rgb2ycbcr
-                thumbnail
                 tiff2bw
                 tiff2pdf
                 tiff2ps
